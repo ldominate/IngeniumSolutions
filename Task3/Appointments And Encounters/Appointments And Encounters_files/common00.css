@@ -1,0 +1,613 @@
+#WindowZone
+{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -9999;
+}
+
+/* UPLOAD-THUMBNAIL start of block */
+.upload-thumbnail-image 
+{
+	float: left;
+}
+.upload-thumbnail-invalid-container
+{
+	width: 105px;
+	padding-top:40px;
+}
+.upload-thumbnail-invalid
+{
+	color: #FF0000;
+}
+.upload-thumbnail-btn
+{
+    padding-left: 10px;
+}
+.upload-thumbnail-binary-image
+{
+	margin-bottom: 5px;
+	margin-left: 10px;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+/* UPLOAD-THUMBNAIL end of block */
+
+
+/* TOPRIGHT-MENU start of block */
+.topright-menu
+{
+	background-color: #f5f5f5;
+	border: 1px solid #e9e9e9;
+	border-top: 1px solid #c2c2c2;
+	border-radius: 4px;
+	white-space: nowrap;
+	padding: 8px 0px 6px 0px;
+	float: right;
+}
+
+.topright-menu li
+{
+	float: left;
+	width: 70px;
+    padding-left:3px;
+}
+
+.topright-menu div 
+{
+	text-align: center;
+}
+
+.topright-menu a:hover div 
+{
+	color: #00b1f1;
+}
+
+.topright-menu .report,
+.topright-menu .help,
+.topright-menu .myproviders,
+.topright-menu .myprofile,
+.topright-menu .system,
+.topright-menu .documents
+{
+	height: 32px;
+	width: 32px;
+	margin: 0px auto 3px auto;
+
+	background-image: url('toolbar_.png');   
+}
+
+.topright-menu .report { background-position: -1px 0px; }
+.topright-menu div:hover .report { background-position: 32px 0px; }
+
+.topright-menu .help { background-position: -2px -43px; }
+.topright-menu div:hover .help { background-position: 32px -43px; }
+
+.topright-menu .myproviders { background-position: -2px -79px; }
+.topright-menu div:hover .myproviders { background-position: 33px -79px; }
+
+.topright-menu .myprofile { background-position: -2px -112px; }
+.topright-menu div:hover .myprofile { background-position: 32px -112px; }
+
+.topright-menu .system { background-position: -2px -152px; }
+.topright-menu div:hover .system { background-position: 32px -152px; }
+
+/* TOPRIGHT-MENU end of block */
+
+.quickmenu-wrapper
+{
+	color: #404040; 
+	font-size: 12px;
+	margin-top: 12px; 
+	padding-bottom: 20px;
+	height: 60px;
+	width: 1230px;
+}
+
+/* USER-SELECTOR start of block */
+.userselector
+{
+	float: left; 
+	height: 65px; 
+	padding-top: 3px;
+}
+
+.userselector-label
+{
+	float: left; 
+	font-family: Helvetica, Arial;
+	font-size: 12px; 
+	margin: 10px 0px 10px 0px;
+}
+
+.userselector-photo
+{
+	float: left; 
+	margin: 0px 15px 0px 0px;
+	padding: 3px;
+	background-color: #F5F5F5;
+	border-radius: 4px; 
+}
+
+.user-photo-img
+{
+	width: 50px;
+	height: 61px;
+	border-radius: 4px; 
+	border: 1px solid #808080;
+	box-shadow: inset 0px 0px 2px 2px #888
+}
+
+.userselector-combo
+{
+	float: left; 
+}
+
+.userselector-combo .rcbInputCell input
+{
+	font-size: 14px;
+}
+
+.userselector-combo .RadComboBox_CarebookBlue table td.rcbInputCell, 
+.userselector-combo .RadComboBox_CarebookBlue table td.rcbInputCell .rcbInput
+{
+	height: 26px;
+	line-height: 26px;
+
+	padding: 0px 10px 0px 10px;
+}
+
+.userselector-combo .RadComboBox_CarebookBlue
+{
+	height: 29px;
+	line-height: 29px;
+}
+
+.userselector-combo .RadComboBox_CarebookBlue table
+{
+	background-color: #FBFBFB;
+	box-shadow: inset 0px 0px 15px #F0F0F0;
+}
+
+.userselector-combo .RadComboBox_CarebookBlue .rcbReadOnly td.rcbArrowCell, 
+.userselector-combo .RadComboBox_CarebookBlue table td.rcbArrowCell
+{
+	background-image: url('combo-bu.png');
+}
+
+.userselector-combo .RadComboBox_CarebookBlue .rcbReadOnly td.rcbArrowCell, 
+.userselector-combo .RadComboBox_CarebookBlue table td.rcbArrowCell,
+.userselector-combo .RadComboBox_CarebookBlue .rcbArrowCell a
+{
+	width: 40px !important;
+}
+
+.userselector-combo .RadComboBox_CarebookBlue .rcbArrowCellRight { background-position: -15px 5px; }
+
+.userselector-combo-photo
+{
+	padding-top: 5px;
+	
+}
+
+.userselector-combo-photo-img
+{
+	width: 40px;
+	height: 49px;
+}
+
+.userselector-combo-name
+{
+	float: left; 
+	margin-top: 23px; 
+	margin-left: 5px;
+}
+
+.userselector-combo-separator
+{
+	height: 5px;
+}
+
+/* USER-SELECTOR end of block */
+
+
+/* USER-LIST start of block */
+.user-list .container
+{
+	background-color: #FFFFFF;
+	font-family: Helvetica, Arial;
+	width: 100%;
+	
+	border: 1px solid #c2c2c2;
+	border-top: none;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.user-list li .item-container 
+{
+	padding-top: 10px;
+	padding-left: 10px;
+	width: 100%;
+	height: 100%;
+}
+
+.user-list .header
+{ 
+	width: 100%;
+	
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	background-image: url('gradient.png');
+	height: 40px;
+	line-height: 40px;
+	
+	border: 1px solid #c2c2c2;
+}
+
+.user-list .header-text 
+{
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+.user-list li
+{
+	list-style-type: none;
+	height: 90px;
+}
+
+.user-list-photo
+{
+	float: left; 
+	margin: 0px 0px 0px 0px;
+	padding: 3px;
+	background-color: #F5F5F5;
+	border-radius: 4px;
+}
+
+.user-list-paging
+{
+	text-align:center;
+	padding: 5px;
+}
+
+.user-list .details
+{
+	float: left;
+	white-space: normal;
+}
+
+.user-list .details .name
+{
+	margin-top: 15px;
+	margin-left: 10px;
+	color: #038fc2;
+	font-weight: bold;
+}
+
+.user-list .details .type
+{
+	margin-top: 5px;
+	margin-left: 10px;
+	color: #404040;
+}
+
+.user-list-highlighted
+{
+	background-color: #038fc2;
+	background-image: url('http://localhost:56387/Sitefinity/WebsiteTemplates/CarebookDefault/App_Themes/ThemeDefault/Images/selection-arrow.png');
+	background-position: 195px 35px;
+	background-repeat: no-repeat;
+}
+
+.user-list-highlighted .details .name, .user-list-highlighted .details .type
+{
+	color: #ffffff;
+}
+
+.user-list-highlighted .user-list-photo 
+{
+	background-color: #00b1f1;
+}
+
+/* USER-LIST end of block */
+
+/* GRID PAGER start of block */
+.grid-pager
+{
+	float: right; 
+	height: 40px;
+	padding-top: 8px;
+	padding-right: 10px;
+}
+
+.grid-pager .rgWrap.rgNumPart a,
+.grid-pager .rgWrap.rgNumPart a span
+{
+	float: none;
+	display: inline-block;
+	line-height: 25px;
+	padding: 0px;
+}
+
+.grid-pager .rgWrap.rgNumPart
+{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.grid-pager .rgWrap.rgNumPart a
+{
+	width: 25px;
+	height: 25px;
+	text-align: center;   
+}
+
+.grid-pager .rgWrap.rgNumPart a.rgCurrentPage
+{
+	border: 1px solid #c2c2c2;
+	border-radius: 1px;
+	box-shadow: inset -1px 1px 3px rgba(0,0,0,0.15);
+	background-color: #FFFFFF;
+}
+
+.grid-pager .rgWrap.rgNumPart a span
+{
+	text-align: center;
+}
+
+.grid-pager .gpPagePrev,
+.grid-pager .gpPageNext,
+.grid-pager .gpPageFirst,
+.grid-pager .gpPageLast
+{
+	background-color: transparent;
+	background-image:url('sprite00.png');
+	width:32px;
+	height:32px;
+	vertical-align:top;
+	line-height: 30px;
+	border: none;
+	cursor: pointer;
+}
+
+.gpPagePrev
+{
+	background-color: transparent;
+	background-image:url('sprite00.png');
+	width:32px;
+	height:32px;
+	vertical-align:top;
+	line-height: 30px;
+	border: none;
+	cursor: pointer;
+}
+
+.gpPageNext
+{
+	background-color: transparent;
+	background-image:url('sprite00.png');
+	width:32px;
+	height:32px;
+	vertical-align:top;
+	line-height: 30px;
+	border: none;
+	cursor: pointer;
+}
+.gpPagePrev
+{
+	background-position:0 -700px;
+}
+.gpPagePrev:hover
+{
+	background-position:0 -750px;
+}
+.gpPageNext
+{
+	background-position:0 -850px;
+}
+.gpPageNext:hover
+{
+	background-position:0 -900px;
+}
+
+.grid-pager .gpPageFirst
+{
+	background-position:0 -550px;
+}
+.grid-pager .gpPageFirst:hover
+{
+	background-position:0 -600px;
+}
+.grid-pager .gpPagePrev
+{
+	background-position:0 -700px;
+}
+.grid-pager .gpPagePrev:hover
+{
+	background-position:0 -750px;
+}
+.grid-pager .gpPageNext
+{
+	background-position:0 -850px;
+}
+.grid-pager .gpPageNext:hover
+{
+	background-position:0 -900px;
+}
+.grid-pager .gpPageLast
+{
+	background-position:0 -1000px;
+}
+.grid-pager .gpPageLast:hover
+{
+	background-position:0 -1050px;
+}
+
+/* GRID PAGER end of block */
+
+/* GRID ADD LINK (BOTTOM) start of block */
+.grid-addlink
+{
+	height: 48px;
+	line-height: 48px;
+	color: #038fc2;
+	font-weight: bold;
+	font-style: italic;
+	padding-left: 10px;
+}
+
+.grid-addlink-top
+{
+	height: 32px;
+	line-height: 40px;
+	color: #038fc2;
+	font-weight: bold;
+	font-style: italic;
+    padding-right: 10px;
+}
+/* GRID ADD LINK (BOTTOM) end of block */
+
+
+/**/
+.hidden-submit {
+    border: 0 none;
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+/*ValidateDateTimePicker*/
+.validatedatetimepicker-time {
+   padding-left: 10px;
+}
+
+.results-list .container
+{
+	background-color: #FFFFFF;
+	font-family: Helvetica, Arial;
+	width: 100%;
+	
+	border: 1px solid #c2c2c2;
+	border-top: none;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.results-list li.result-list-item
+{
+	width: 100%;
+	height: 100%;
+	list-style-type: none;
+	height: 25px;
+    line-height: 25px;
+}
+
+.results-list li.result-list-item.highlighted
+{
+	background-color: #038fc2;
+	background-image: url('http://localhost:56387/Sitefinity/WebsiteTemplates/CarebookDefault/App_Themes/ThemeDefault/Images/selection-arrow.png');
+	background-position: 295px 5px;
+	background-repeat: no-repeat;
+}
+
+.results-list li.result-list-item .item-container 
+{
+    padding-left: 10px;
+}
+
+.results-list li.result-list-item.highlighted .item-container 
+{    
+    color: #FFFFFF;
+}
+
+.results-list .header
+{ 
+	width: 100%;
+	
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	background-image: url('gradient.png');
+	height: 40px;
+	line-height: 40px;
+	
+	border: 1px solid #c2c2c2;
+}
+
+.results-list .header-text 
+{
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+/* ValidatedSplittedDatePicker */
+.splitted-date-picker-asterisk
+{
+	 color:#FF0000;
+}
+
+.splitted-date-picker-padding {
+    margin-bottom: 5px;
+}
+
+.splitted-date-picker-information-message-icon
+{
+	background: #fff 100% -298px no-repeat url('sprite00.gif');
+	height: 20px;
+	width: 20px;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+.splitted-date-picker-information-message
+{
+    margin-top: 5px;
+	width: 300px;
+	font-style:italic;
+}
+
+.hidden-date-picker td
+{
+	padding:0 !important;
+	width:1px !important;
+}
+/*.hidden-date-picker
+{
+    width:1px !important;
+}*/
+
+.hidden-date-picker-text-box
+{
+	width:1px !important;
+	border:0 !important;
+	margin:0 !important;
+	padding:0 !important;
+	background:none transparent !important;
+	visibility:hidden !important;
+}
+
+.splitted-date-picker-label-estimated
+{
+    padding-left: 10px;
+    padding-top: 3px;
+	margin-right: 10px;
+}
+
+.errorSummaryContainer
+{
+    width: auto;
+    margin-bottom: 15px;
+    background-color: transparent;
+    padding: 5px;
+    font-weight: normal;
+}
+.errorSummaryContainer div ul li
+{
+    color: #ff0202 !important;
+}
