@@ -3,7 +3,7 @@
 <%@ Import Namespace="Telerik.Web.UI" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <telerik:RadListView runat="server" ID="RadListView1" PageSize="3" AllowPaging="true" OnNeedDataSource="RadListView1_OnNeedDataSource" ItemPlaceholderID="PlaceHolderListContainer"
-        DataKeyNames="Id">
+        DataKeyNames="Id" OnSelectedIndexChanged="RadListView1_OnSelectedIndexChanged">
         <LayoutTemplate>
             <asp:PlaceHolder ID="PlaceHolderListContainer" runat="server"></asp:PlaceHolder>
             <telerik:RadDataPager ID="RadDataPagerUserList" runat="server" PagedControlID="RadListView1"
@@ -30,7 +30,7 @@
     </telerik:RadListView>
 
 
-    <telerik:RadGrid runat="server" ID="RadGrid1" PageSize="3" AllowPaging="true" OnNeedDataSource="RadGrid1_OnNeedDataSource">
+    <telerik:RadGrid runat="server" ID="RadGrid1" PageSize="10" AllowPaging="true" OnNeedDataSource="RadGrid1_OnNeedDataSource">
         <PagerStyle AlwaysVisible="true" Mode="NextPrev" />
     </telerik:RadGrid>
 </asp:Content>
