@@ -58,7 +58,7 @@ public partial class RadListView : System.Web.UI.Page
             }
 
             GridDataSource = new List<int>();
-            for (int i = 10; i < 100; i++)
+            for (int i = 11; i < 100; i++)
             {
                 GridDataSource.Add(i);
             }
@@ -82,12 +82,15 @@ public partial class RadListView : System.Web.UI.Page
     /// <param name="e"></param>
     protected void RadGrid1_OnNeedDataSource(object sender, GridNeedDataSourceEventArgs e)
     {
-        RadGrid1.DataSource = GridDataSource;
+		var page = ((int)(RadListView1.SelectedValue ?? 0) == 1) ? 9 : 10;
+		var selected = (int)(RadListView1.SelectedValue ?? 1) - 1;
+		RadGrid1.DataSource = GridDataSource.Skip(page * selected - ((page > 9) ? 1 : 0)).Take(page);
     }
 
 	protected void RadListView1_OnSelectedIndexChanged(object sender, EventArgs e)
 	{
-		RadGrid1.CurrentPageIndex = ((int) RadListView1.SelectedValue) - 1;
+//		RadGrid1.CurrentPageIndex = ((int) RadListView1.SelectedValue) - 1;
+//		RadGrid1.PageSize = ((int) RadListView1.SelectedValue == 1) ? 9 : 10;
 		RadGrid1.Rebind();
 	}
 }

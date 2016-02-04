@@ -30,7 +30,7 @@
     </telerik:RadListView>
 
 
-    <telerik:RadGrid runat="server" ID="RadGrid1" PageSize="10" AllowPaging="true" OnNeedDataSource="RadGrid1_OnNeedDataSource">
+    <telerik:RadGrid runat="server" ID="RadGrid1" PageSize="9" AllowPaging="False" OnNeedDataSource="RadGrid1_OnNeedDataSource">
         <PagerStyle AlwaysVisible="true" Mode="NextPrev" />
     </telerik:RadGrid>
 </asp:Content>
