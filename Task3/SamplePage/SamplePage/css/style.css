@@ -1,0 +1,91 @@
+﻿html, * body{
+	height: 100%;
+	min-height: 100%;
+	max-height: 100%;
+}
+body
+{
+	height: 100%;
+	min-height: 100%;
+	max-height: 100%;
+}
+body .main-section {
+	position:relative;
+	height: 100%;
+	min-height: 100%;
+	max-height: 100%;
+	width: 100%;
+	display: inline-table;
+}
+body .main-section > section {
+	/*border: fuchsia 1px solid;*/
+	display: table-cell;
+	position: relative;
+	height: 100%;
+	min-height: 100%;
+	max-height: 100%;
+}
+body .main-section .block {
+	position: relative;
+	margin: 15px 10px;
+}
+body .main-section .cent-block {
+	border-color: fuchsia;
+	vertical-align: middle;
+}
+body .main-section .cent-block .img-block {
+	top: 0px;
+	text-align: left;
+}
+body .main-section .left-block {
+	width: 60%;
+	border-color: blue;
+	vertical-align: bottom;
+}
+body .main-section .left-block .img-block {
+	top: 0px;
+	text-align: right;
+}
+body .main-section .right-block {
+	width: 40%;
+	border-color: greenyellow;
+}
+body .main-section .right-block .img-block {
+	bottom: 0px;
+	text-align: center;
+}
+body .main-section .inner-cent-block {
+	width: 400px;
+	vertical-align: middle;
+	text-align: center;
+}
+body .main-section .inner-left-block {
+	text-align: center;
+	vertical-align: bottom;
+}
+body .main-section .inner-right-block {
+	vertical-align: top;
+}
+.inner-cent-block article {
+	width: 300px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+}
+.inner-left-block article {
+	width: 200px;
+	margin: 0 auto;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.inner-right-block article {
+	width: 200px;
+	margin: 0 auto;
+}
+.img-block {
+	width: 100%;
+	position: absolute;
+}
+.img-block img {
+	margin: 10px;
+}
